@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+html {
+    font-family: "Roboto", monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.start-form {
+    margin-bottom: 20px;
+}
+
+.OUTPUT {
+    margin-bottom: 20px;
+}
+
+.title_screen {
+    background-image: url("https://sped.lol/static/assets/sparkling.gif");
+    font-size: 2.0rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    color: #ffc000;
+    text-shadow: 0 0 10px #ffc000;
+    font-family: "Roboto", sans-serif;
+    padding: 3px;
+    border: 1px solid #ffc000;
+    border-radius: 5px;
+}
