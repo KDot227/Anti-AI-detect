@@ -59,12 +59,12 @@ function obfuscate_characters(essay) {
         "C": "CС",
         "D": "D",
         "E": "EЕΕЕ",
-        "F": "Fᖴ",
-        "G": "GԌԌ",
-        "H": "HНHΗН",
+        "F": "FϜᖴ",
+        "G": "GԌԌᏀ",
+        "H": "HНHΗНᎻᕼ",
         "I": "IІ",
-        "J": "JЈЈ",
-        "K": "KΚКᛕKⲔꓗ",
+        "J": "JЈͿЈ",
+        "K": "KΚКᏦᛕKⲔꓗ",
         "L": "L",
         "M": "MΜϺМ",
         "N": "N",
@@ -98,17 +98,17 @@ function obfuscate_characters(essay) {
     let obfuscatedEssay = '';
 
     for (const char of essay) {
-        if (char.match(/[a-zA-Z]/)) {
-            if (char === char.toUpperCase()) {
-                obfuscatedEssay += get_random_char(char_dict_capitals[char]);
-            } else {
-                obfuscatedEssay += get_random_char(char_dict[char]);
-            }
-        } else if (char.match(/\d/)) {
-            obfuscatedEssay += get_random_char(char_dict_numbers[char]);
+      if (char.match(/[a-zA-Z]/)) {
+        if (char === char.toUpperCase()) {
+          obfuscatedEssay += get_random_char(char_dict_capitals[char]);
         } else {
-            obfuscatedEssay += char;
+          obfuscatedEssay += get_random_char(char_dict[char]);
         }
+      } else if (char.match(/\d/)) {
+        obfuscatedEssay += get_random_char(char_dict_numbers[char]);
+      } else {
+        obfuscatedEssay += char;
+      }
     }
     
     return obfuscatedEssay;
